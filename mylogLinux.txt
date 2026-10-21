@@ -1,0 +1,133 @@
+Oct 15 14:17:25 nst-n1 sshd-session[363602]: Connection closed by 127.0.0.1 port 34766
+Oct 15 14:17:25 nst-n1 sshd-session[363417]: pam_unix(sshd:session): session closed for user kanishk
+Oct 15 14:17:25 nst-n1 sshd-session[363417]: pam_tty_audit(sshd:session): restored status to 0
+Oct 15 14:17:25 nst-n1 systemd[1]: session-789.scope: Deactivated successfully.
+Oct 15 14:17:25 nst-n1 systemd-logind[1124]: Session 789 logged out. Waiting for processes to exit.
+Oct 15 14:17:25 nst-n1 systemd-logind[1124]: Removed session 789.
+Oct 15 14:17:55 nst-n1 k3s[1638]: time="2026-10-15T14:17:55Z" level=info msg="COMPACT compactRev=123469688 targetCompactRev=123470688 currentRev=123473794"
+Oct 15 14:17:55 nst-n1 k3s[1638]: time="2026-10-15T14:17:55Z" level=info msg="COMPACT deleted 1000 rows from 1000 revisions in 47.984499ms - compacted to 123470688/123473794"
+Oct 15 14:17:55 nst-n1 k3s[1638]: time="2026-10-15T14:17:55Z" level=info msg="COMPACT compactRev=123470688 targetCompactRev=123471688 currentRev=123473794"
+Oct 15 14:17:55 nst-n1 k3s[1638]: time="2026-10-15T14:17:55Z" level=info msg="COMPACT deleted 1000 rows from 1000 revisions in 11.942392ms - compacted to 123471688/123473794"
+Oct 15 14:17:55 nst-n1 k3s[1638]: time="2026-10-15T14:17:55Z" level=info msg="COMPACT compactRev=123471688 targetCompactRev=123471725 currentRev=123473794"
+Oct 15 14:17:55 nst-n1 k3s[1638]: time="2026-10-15T14:17:55Z" level=info msg="COMPACT deleted 37 rows from 37 revisions in 842.878µs - compacted to 123471725/123473794"
+Oct 15 14:17:55 nst-n1 k3s[1638]: time="2026-10-15T14:17:55Z" level=info msg="COMPACT compacted from 123469688 to 123471725 in 3 transactions over 62ms"
+Oct 15 14:18:26 nst-n1 k3s[1638]: E1015 14:18:26.447745    1638 pod_workers.go:1338] "Error syncing pod, skipping" err="unmounted volumes=[app-code], unattached volumes=[app-code], failed to process volumes=[]: context deadline exceeded" pod="s-prabhav/sentinal-portal-746d5f779b-fdhbt" podUID="e327b4a3-4d2f-4591-9d2e-69d9cf9b4d10"
+Oct 15 14:18:54 nst-n1 k3s[1638]: I1015 14:18:54.112591    1638 reconciler.go:364] "attacherDetacher.AttachVolume started" volumeName="kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b" nodeName="nst-n1" scheduledPods=["s-prabhav/sentinal-portal-746d5f779b-fdhbt"]
+Oct 15 14:18:54 nst-n1 k3s[1638]: E1015 14:18:54.621952    1638 csi_attacher.go:643] kubernetes.io/csi: attachment for pvc-839796bf-1607-4d50-b009-05bcd389be0b failed: CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:18:54 nst-n1 k3s[1638]: E1015 14:18:54.622110    1638 nestedpendingoperations.go:348] Operation for "{volumeName:kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b podName: nodeName:}" failed. No retries permitted until 2026-10-15 14:20:56.622069202 +0000 UTC m=+256452.251451393 (durationBeforeRetry 2m2s). Error: AttachVolume.Attach failed for volume "pvc-839796bf-1607-4d50-b009-05bcd389be0b" (UniqueName: "kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b") from node "nst-n1" : CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:20:02 nst-n1 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+Oct 15 14:20:02 nst-n1 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Oct 15 14:20:02 nst-n1 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Oct 15 14:20:40 nst-n1 k3s[1638]: E1015 14:20:40.447795    1638 pod_workers.go:1338] "Error syncing pod, skipping" err="unmounted volumes=[app-code], unattached volumes=[app-code], failed to process volumes=[]: context deadline exceeded" pod="s-prabhav/sentinal-portal-746d5f779b-fdhbt" podUID="e327b4a3-4d2f-4591-9d2e-69d9cf9b4d10"
+Oct 15 14:20:56 nst-n1 k3s[1638]: I1015 14:20:56.624031    1638 reconciler.go:364] "attacherDetacher.AttachVolume started" volumeName="kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b" nodeName="nst-n1" scheduledPods=["s-prabhav/sentinal-portal-746d5f779b-fdhbt"]
+Oct 15 14:20:57 nst-n1 k3s[1638]: E1015 14:20:57.135080    1638 csi_attacher.go:643] kubernetes.io/csi: attachment for pvc-839796bf-1607-4d50-b009-05bcd389be0b failed: CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:20:57 nst-n1 k3s[1638]: E1015 14:20:57.135247    1638 nestedpendingoperations.go:348] Operation for "{volumeName:kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b podName: nodeName:}" failed. No retries permitted until 2026-10-15 14:22:59.13521348 +0000 UTC m=+256574.764595663 (durationBeforeRetry 2m2s). Error: AttachVolume.Attach failed for volume "pvc-839796bf-1607-4d50-b009-05bcd389be0b" (UniqueName: "kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b") from node "nst-n1" : CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:22:55 nst-n1 k3s[1638]: E1015 14:22:55.446939    1638 pod_workers.go:1338] "Error syncing pod, skipping" err="unmounted volumes=[app-code], unattached volumes=[app-code], failed to process volumes=[]: context deadline exceeded" pod="s-prabhav/sentinal-portal-746d5f779b-fdhbt" podUID="e327b4a3-4d2f-4591-9d2e-69d9cf9b4d10"
+Oct 15 14:22:56 nst-n1 k3s[1638]: time="2026-10-15T14:22:56Z" level=info msg="COMPACT compactRev=123471725 targetCompactRev=123472725 currentRev=123475821"
+Oct 15 14:22:56 nst-n1 k3s[1638]: time="2026-10-15T14:22:56Z" level=info msg="COMPACT deleted 992 rows from 1000 revisions in 55.254873ms - compacted to 123472725/123475821"
+Oct 15 14:22:56 nst-n1 k3s[1638]: time="2026-10-15T14:22:56Z" level=info msg="COMPACT compactRev=123472725 targetCompactRev=123473725 currentRev=123475821"
+Oct 15 14:22:56 nst-n1 k3s[1638]: time="2026-10-15T14:22:56Z" level=info msg="COMPACT deleted 1005 rows from 1000 revisions in 18.790518ms - compacted to 123473725/123475821"
+Oct 15 14:22:56 nst-n1 k3s[1638]: time="2026-10-15T14:22:56Z" level=info msg="COMPACT compactRev=123473725 targetCompactRev=123473794 currentRev=123475821"
+Oct 15 14:22:56 nst-n1 k3s[1638]: time="2026-10-15T14:22:56Z" level=info msg="COMPACT deleted 69 rows from 69 revisions in 19.392903ms - compacted to 123473794/123475821"
+Oct 15 14:22:56 nst-n1 k3s[1638]: time="2026-10-15T14:22:56Z" level=info msg="COMPACT compacted from 123471725 to 123473794 in 3 transactions over 94ms"
+Oct 15 14:22:59 nst-n1 k3s[1638]: I1015 14:22:59.140275    1638 reconciler.go:364] "attacherDetacher.AttachVolume started" volumeName="kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b" nodeName="nst-n1" scheduledPods=["s-prabhav/sentinal-portal-746d5f779b-fdhbt"]
+Oct 15 14:22:59 nst-n1 k3s[1638]: E1015 14:22:59.673682    1638 csi_attacher.go:643] kubernetes.io/csi: attachment for pvc-839796bf-1607-4d50-b009-05bcd389be0b failed: CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:22:59 nst-n1 k3s[1638]: E1015 14:22:59.673836    1638 nestedpendingoperations.go:348] Operation for "{volumeName:kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b podName: nodeName:}" failed. No retries permitted until 2026-10-15 14:25:01.673799705 +0000 UTC m=+256697.303181875 (durationBeforeRetry 2m2s). Error: AttachVolume.Attach failed for volume "pvc-839796bf-1607-4d50-b009-05bcd389be0b" (UniqueName: "kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b") from node "nst-n1" : CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:23:14 nst-n1 sshd-session[366193]: Accepted password for raghav from 127.0.0.1 port 55454 ssh2
+Oct 15 14:23:14 nst-n1 sshd-session[366193]: pam_unix(sshd:session): session opened for user raghav(uid=1036) by raghav(uid=0)
+Oct 15 14:23:14 nst-n1 systemd-logind[1124]: New session 797 of user raghav.
+Oct 15 14:23:14 nst-n1 systemd[1]: Created slice user-1036.slice - User Slice of UID 1036.
+Oct 15 14:23:14 nst-n1 systemd[1]: Starting user-runtime-dir@1036.service - User Runtime Directory /run/user/1036...
+Oct 15 14:23:15 nst-n1 systemd[1]: Finished user-runtime-dir@1036.service - User Runtime Directory /run/user/1036.
+Oct 15 14:23:15 nst-n1 systemd[1]: Starting user@1036.service - User Manager for UID 1036...
+Oct 15 14:23:15 nst-n1 (systemd)[366211]: pam_unix(systemd-user:session): session opened for user raghav(uid=1036) by raghav(uid=0)
+Oct 15 14:23:15 nst-n1 systemd-logind[1124]: New session 798 of user raghav.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Queued start job for default target default.target.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Created slice app.slice - User Application Slice.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Created slice session.slice - User Core Session Slice.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Reached target paths.target - Paths.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Reached target timers.target - Timers.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Starting dbus.socket - D-Bus User Message Bus Socket...
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+Oct 15 14:23:15 nst-n1 systemd[366211]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Oct 15 14:23:15 nst-n1 systemd[366211]: Starting gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on keyboxd.socket - GnuPG public key management service.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on pk-debconf-helper.socket - debconf communication socket.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on snapd.session-agent.socket - REST API socket for snapd user session agent.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Oct 15 14:23:15 nst-n1 systemd[366211]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Reached target sockets.target - Sockets.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Reached target basic.target - Basic System.
+Oct 15 14:23:15 nst-n1 systemd[1]: Started user@1036.service - User Manager for UID 1036.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Starting dbus.service - D-Bus User Message Bus...
+Oct 15 14:23:15 nst-n1 systemd[1]: Started session-797.scope - Session 797 of User raghav.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Started pipewire.service - PipeWire Multimedia Service.
+Oct 15 14:23:15 nst-n1 sshd-session[366193]: pam_tty_audit(sshd:session): changed status from 0 to 1
+Oct 15 14:23:15 nst-n1 systemd[366211]: Started filter-chain.service - PipeWire filter chain daemon.
+Oct 15 14:23:15 nst-n1 dbus-daemon[366240]: [session uid=1036 pid=366240 pidfd=5] AppArmor D-Bus mediation is enabled
+Oct 15 14:23:15 nst-n1 systemd[366211]: Started dbus.service - D-Bus User Message Bus.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Started mpris-proxy.service - Bluetooth mpris proxy.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Started wireplumber.service - Multimedia Service Session Manager.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Started pipewire-pulse.service - PipeWire PulseAudio.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Reached target default.target - Main User Target.
+Oct 15 14:23:15 nst-n1 systemd[366211]: Startup finished in 249ms.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 0 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 0 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 0 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 0 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 0 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 1 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 1 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 1 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 1 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 1 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 1 users.
+Oct 15 14:23:15 nst-n1 rtkit-daemon[17091]: Supervising 0 threads of 0 processes of 1 users.
+Oct 15 14:23:15 nst-n1 wireplumber[366251]: [71:18:18.328627685] [366251]  INFO Camera camera_manager.cpp:326 libcamera v0.5.0
+Oct 15 14:23:15 nst-n1 wireplumber[366251]: [71:18:18.328903225] [366284] ERROR DmaBufAllocator dma_buf_allocator.cpp:119 Could not open any dma-buf provider
+Oct 15 14:23:22 nst-n1 unix_chkpwd[366346]: password check failed for user (prabhav)
+Oct 15 14:23:22 nst-n1 sshd-session[366338]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=prabhav
+Oct 15 14:23:24 nst-n1 sshd-session[366338]: Failed password for prabhav from 127.0.0.1 port 51656 ssh2
+Oct 15 14:23:25 nst-n1 sshd-session[366338]: Failed password for prabhav from 127.0.0.1 port 51656 ssh2
+Oct 15 14:23:25 nst-n1 sshd-session[366338]: Failed password for prabhav from 127.0.0.1 port 51656 ssh2
+Oct 15 14:23:25 nst-n1 sshd-session[366338]: Connection closed by authenticating user prabhav 127.0.0.1 port 51656 [preauth]
+Oct 15 14:23:54 nst-n1 sshd-session[365296]: Connection closed by 127.0.0.1 port 51346
+Oct 15 14:23:54 nst-n1 sshd-session[365230]: pam_unix(sshd:session): session closed for user kanishk
+Oct 15 14:23:54 nst-n1 sshd-session[365230]: pam_tty_audit(sshd:session): restored status to 0
+Oct 15 14:23:54 nst-n1 systemd[1]: session-793.scope: Deactivated successfully.
+Oct 15 14:23:54 nst-n1 systemd-logind[1124]: Session 793 logged out. Waiting for processes to exit.
+Oct 15 14:23:54 nst-n1 systemd-logind[1124]: Removed session 793.
+Oct 15 14:24:07 nst-n1 systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+Oct 15 14:24:07 nst-n1 systemd[1]: fwupd-refresh.service: Deactivated successfully.
+Oct 15 14:24:07 nst-n1 systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+Oct 15 14:25:01 nst-n1 k3s[1638]: I1015 14:25:01.754612    1638 reconciler.go:364] "attacherDetacher.AttachVolume started" volumeName="kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b" nodeName="nst-n1" scheduledPods=["s-prabhav/sentinal-portal-746d5f779b-fdhbt"]
+Oct 15 14:25:01 nst-n1 systemd[1]: Starting pmlogger_check.service - Check pmlogger instances are running...
+Oct 15 14:25:01 nst-n1 systemd[1]: Started pmlogger_check.service - Check pmlogger instances are running.
+Oct 15 14:25:01 nst-n1 CRON[366474]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Oct 15 14:25:01 nst-n1 CRON[366484]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 15 14:25:01 nst-n1 CRON[366474]: pam_unix(cron:session): session closed for user root
+Oct 15 14:25:02 nst-n1 k3s[1638]: E1015 14:25:02.255635    1638 csi_attacher.go:643] kubernetes.io/csi: attachment for pvc-839796bf-1607-4d50-b009-05bcd389be0b failed: CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:25:02 nst-n1 k3s[1638]: E1015 14:25:02.255723    1638 nestedpendingoperations.go:348] Operation for "{volumeName:kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b podName: nodeName:}" failed. No retries permitted until 2026-10-15 14:27:04.25570519 +0000 UTC m=+256819.885087339 (durationBeforeRetry 2m2s). Error: AttachVolume.Attach failed for volume "pvc-839796bf-1607-4d50-b009-05bcd389be0b" (UniqueName: "kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b") from node "nst-n1" : CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:25:02 nst-n1 systemd[1]: pmlogger_check.service: Deactivated successfully.
+Oct 15 14:25:02 nst-n1 systemd[1]: pmlogger_check.service: Consumed 1.154s CPU time, 7.6M memory peak.
+Oct 15 14:25:09 nst-n1 k3s[1638]: E1015 14:25:09.447151    1638 pod_workers.go:1338] "Error syncing pod, skipping" err="unmounted volumes=[app-code], unattached volumes=[app-code], failed to process volumes=[]: context deadline exceeded" pod="s-prabhav/sentinal-portal-746d5f779b-fdhbt" podUID="e327b4a3-4d2f-4591-9d2e-69d9cf9b4d10"
+Oct 15 14:25:20 nst-n1 systemd[1]: Starting pmlogger_farm_check.service - Check and migrate non-primary pmlogger farm instances...
+Oct 15 14:25:20 nst-n1 systemd[1]: Started pmlogger_farm_check.service - Check and migrate non-primary pmlogger farm instances.
+Oct 15 14:25:20 nst-n1 systemd[1]: pmlogger_farm_check.service: Deactivated successfully.
+Oct 15 14:26:47 nst-n1 k3s[1638]: I1015 14:26:47.981677    1638 cidrallocator.go:278] updated ClusterIP allocator for Service CIDR 10.43.0.0/16
+Oct 15 14:27:04 nst-n1 k3s[1638]: I1015 14:27:04.301362    1638 reconciler.go:364] "attacherDetacher.AttachVolume started" volumeName="kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b" nodeName="nst-n1" scheduledPods=["s-prabhav/sentinal-portal-746d5f779b-fdhbt"]
+Oct 15 14:27:04 nst-n1 k3s[1638]: E1015 14:27:04.807339    1638 csi_attacher.go:643] kubernetes.io/csi: attachment for pvc-839796bf-1607-4d50-b009-05bcd389be0b failed: CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:27:04 nst-n1 k3s[1638]: E1015 14:27:04.807494    1638 nestedpendingoperations.go:348] Operation for "{volumeName:kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b podName: nodeName:}" failed. No retries permitted until 2026-10-15 14:29:06.807445138 +0000 UTC m=+256942.436827303 (durationBeforeRetry 2m2s). Error: AttachVolume.Attach failed for volume "pvc-839796bf-1607-4d50-b009-05bcd389be0b" (UniqueName: "kubernetes.io/csi/driver.longhorn.io^pvc-839796bf-1607-4d50-b009-05bcd389be0b") from node "nst-n1" : CSINode nst-n1 does not contain driver driver.longhorn.io
+Oct 15 14:27:21 nst-n1 sudo[367180]:   raghav : TTY=pts/0 ; PWD=/home/raghav ; USER=root ; COMMAND=/usr/bin/journalctl --since '10 minutes ago'
+Oct 15 14:27:21 nst-n1 sudo[367180]: pam_unix(sudo:session): session opened for user root(uid=0) by raghav(uid=1036)
